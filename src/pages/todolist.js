@@ -30,7 +30,7 @@ const TodoList = () => {
       <List>
         {todos.map((todo, index) => (
           <ListItem key={todo.id}>
-            <ListItemText primary={`${index + 1}. ${todo.title}`} />
+            <ListItemText primary={`${(page - 1) * 10 + index + 1}. ${todo.title}`} />
           </ListItem>
         ))}
       </List>
